@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="/style.css">
+    <title>Luis Oenrique</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+
+
+    <!--Sprite-->
+    <svg style="display: none;">
+        <symbol id="facebook" viewBox="0 0 512 512">
+            <g>
+                <path d="M288,176v-64c0-17.664,14.336-32,32-32h32V0h-64c-53.024,0-96,42.976-96,96v80h-64v80h64v256h96V256h64l32-80H288z"/>
+            </g>
+        </symbol>
+        <symbol id="backToTop" viewBox="0 0 337.085 337.086">
+            <g>
+                <path d="M168.54,0C75.619,0,0.012,75.609,0.012,168.543c0,92.93,75.606,168.543,168.528,168.543
+                    c92.933,0,168.534-75.613,168.534-168.543C337.074,75.609,261.473,0,168.54,0z M271.405,224.327
+                    c-2.407,2.402-5.561,3.615-8.713,3.615c-3.158,0-6.311-1.213-8.719-3.615L168.54,138.9l-85.424,85.427
+                    c-4.816,4.815-12.631,4.815-17.447,0c-4.819-4.815-4.819-12.622,0-17.438l94.152-94.141c4.822-4.815,12.613-4.815,17.426,0
+                    l94.152,94.141C276.221,211.705,276.221,219.512,271.405,224.327z"/>
+            </g>
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 512 512">
+            <g>
+                <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
+                    c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
+                    c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
+                    c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
+                    c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
+                    c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
+                    C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
+                    C480.224,136.96,497.728,118.496,512,97.248z"/>
+            </g>
+        </symbol>
+        <symbol id="linked_in" viewBox="0 0 552.77 552.77">
+            <g>
+                <path d="M17.95,528.854h71.861c9.914,0,17.95-8.037,17.95-17.951V196.8c0-9.915-8.036-17.95-17.95-17.95H17.95
+                    C8.035,178.85,0,186.885,0,196.8v314.103C0,520.816,8.035,528.854,17.95,528.854z"/>
+                <path d="M17.95,123.629h71.861c9.914,0,17.95-8.036,17.95-17.95V41.866c0-9.914-8.036-17.95-17.95-17.95H17.95
+                    C8.035,23.916,0,31.952,0,41.866v63.813C0,115.593,8.035,123.629,17.95,123.629z"/>
+                <path d="M525.732,215.282c-10.098-13.292-24.988-24.223-44.676-32.791c-19.688-8.562-41.42-12.846-65.197-12.846
+                    c-48.268,0-89.168,18.421-122.699,55.27c-6.672,7.332-11.523,5.729-11.523-4.186V196.8c0-9.915-8.037-17.95-17.951-17.95h-64.192
+                    c-9.915,0-17.95,8.035-17.95,17.95v314.103c0,9.914,8.036,17.951,17.95,17.951h71.861c9.915,0,17.95-8.037,17.95-17.951V401.666
+                    c0-45.508,2.748-76.701,8.244-93.574c5.494-16.873,15.66-30.422,30.488-40.649c14.83-10.227,31.574-15.343,50.24-15.343
+                    c14.572,0,27.037,3.58,37.393,10.741c10.355,7.16,17.834,17.19,22.436,30.104c4.604,12.912,6.904,41.354,6.904,85.33v132.627
+                    c0,9.914,8.035,17.951,17.949,17.951h71.861c9.914,0,17.949-8.037,17.949-17.951V333.02c0-31.445-1.982-55.607-5.941-72.48
+                    S535.836,228.581,525.732,215.282z"/>
+            </g>
+        </symbol>
+        <symbol id="google_plus" viewBox="0 0 512 512">
+            <g>
+                <path d="M160,224v64h90.528c-13.216,37.248-48.8,64-90.528,64c-52.928,0-96-43.072-96-96c0-52.928,43.072-96,96-96
+                    c22.944,0,45.024,8.224,62.176,23.168l42.048-48.256C235.424,109.824,198.432,96,160,96C71.776,96,0,167.776,0,256
+                    s71.776,160,160,160s160-71.776,160-160v-32H160z"/>
+            </g>
+        </symbol>
+        <symbol id="behance" viewBox="0 0 511.958 511.958">
+            <g>
+                <path d="M210.624,240.619c10.624-5.344,18.656-11.296,24.16-17.728c9.792-11.584,14.624-26.944,14.624-45.984
+                    c0-18.528-4.832-34.368-14.496-47.648c-16.128-21.632-43.424-32.704-82.016-33.28H0v312.096h142.56
+                    c16.064,0,30.944-1.376,44.704-4.192c13.76-2.848,25.664-8.064,35.744-15.68c8.96-6.624,16.448-14.848,22.4-24.544
+                    c9.408-14.656,14.112-31.264,14.112-49.76c0-17.92-4.128-33.184-12.32-45.728C238.912,255.627,226.752,246.443,210.624,240.619z
+                     M63.072,150.187h68.864c15.136,0,27.616,1.632,37.408,4.864c11.328,4.704,16.992,14.272,16.992,28.864
+                    c0,13.088-4.32,22.24-12.864,27.392c-8.608,5.152-19.776,7.744-33.472,7.744H63.072V150.187z M171.968,348.427
+                    c-7.616,3.68-18.336,5.504-32.064,5.504H63.072v-83.232h77.888c13.568,0.096,24.128,1.888,31.68,5.248
+                    c13.44,6.08,20.128,17.216,20.128,33.504C192.768,328.651,185.856,341.579,171.968,348.427z"/>
+                <rect x="327.168" y="110.539" width="135.584" height="38.848"/>
+                <path d="M509.856,263.851c-2.816-18.08-9.024-33.984-18.688-47.712c-10.592-15.552-24.032-26.944-40.384-34.144
+                    c-16.288-7.232-34.624-10.848-55.04-10.816c-34.272,0-62.112,10.72-83.648,32c-21.472,21.344-32.224,52.032-32.224,92.032
+                    c0,42.656,11.872,73.472,35.744,92.384c23.776,18.944,51.232,28.384,82.4,28.384c37.728,0,67.072-11.232,88.032-33.632
+                    c13.408-14.144,20.992-28.064,22.656-41.728H446.24c-3.616,6.752-7.808,12.032-12.608,15.872
+                    c-8.704,7.04-20.032,10.56-33.92,10.56c-13.216,0-24.416-2.912-33.76-8.704c-15.424-9.28-23.488-25.536-24.512-48.672h170.464
+                    C512.16,289.739,511.52,274.411,509.856,263.851z M342.976,269.835c2.24-15.008,7.68-26.912,16.32-35.712
+                    c8.64-8.768,20.864-13.184,36.512-13.216c14.432,0,26.496,4.128,36.32,12.416c9.696,8.352,15.168,20.48,16.288,36.512H342.976z"
+                    />
+            </g>
+        </symbol>
+        <symbol id="dribble" viewBox="0 0 24 24">
+            <g>
+                <path d="m16.354 23.17c.02-.006.039-.014.059-.021 12.215-4.853 8.836-23.149-4.413-23.149-6.649 0-12 5.42-12 12 0 8.327 8.434 14.269 16.354 11.17zm-11.073-3.111c.852-1.432 3.609-5.472 8.315-6.866.984 2.509 1.674 5.436 1.742 8.755-3.566 1.199-7.327.392-10.057-1.889zm11.532 1.263c-.131-3.189-.782-6.017-1.71-8.467 2.082-.325 4.492-.108 7.225.987-.581 3.261-2.666 6.002-5.515 7.48zm5.672-9.031c-3.01-1.131-5.663-1.272-7.959-.834-.355-.8-.728-1.569-1.123-2.277 3.523-1.407 5.605-3.122 6.537-4.03 1.645 1.904 2.622 4.369 2.545 7.141zm-3.61-8.209c-.848.807-2.845 2.437-6.26 3.77-1.674-2.648-3.464-4.516-4.598-5.562 3.628-1.494 7.812-.856 10.858 1.792zm-12.292-1.059c.856.753 2.735 2.561 4.548 5.357-2.49.802-5.612 1.391-9.409 1.474.604-2.894 2.408-5.346 4.861-6.831zm-5.051 8.337c4.25-.069 7.69-.74 10.409-1.648.376.659.733 1.377 1.076 2.123-4.735 1.508-7.694 5.401-8.827 7.159-1.828-2.04-2.836-4.702-2.658-7.634z"/>
+            </g>
+        </symbol>
+    </svg>
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+
+    <div class="scrollTop">
+        
+    </div>
+
+
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a href="#"><img src="/img/logo.png" alt="logo" class="logo__img"></a>
+                </div>
+                <nav class="nav">
+                    <a href="#" class="nav__link" data-scroll="#intro">Home</a>
+                    <a href="#" class="nav__link" data-scroll="#about">ABOUT</a>
+                    <a href="#" class="nav__link" data-scroll="#services">SERVICE</a>
+                    <a href="#" class="nav__link" data-scroll="#portfolio">PORTFOLIO</a>
+                    <a href="#" class="nav__link" data-scroll="#contact">CONTACT</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="intro__content">
+                    <div class="intro__title">
+                        Luis Oenrique
+                    </div>
+                    <div class="intro__text">
+                        <p>User</p>
+                        <p class="typing"></p> 
+                    </div>
+                    <div class="intro__buttons">
+                        <a class="intro__btn" href="#" data-scroll="#about">Know More</a>
+                        <a class="intro__btn" href="#" data-scroll="#contact">Hire Me</a>
+                    </div>
+                </div>
+                <div class="intro__photo">
+                    <img src="/img/img face.png" alt="" class="intro__img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="container">
+            <div class="about__inner appear">
+                <div class="about__item">
+                    <div class="about__title">
+                        Know More <br>About Me
+                    </div>
+                    <div class="about__text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. In esse autem ex ipsa illum consequatur temporibus necessitatibus quam voluptate eveniet, expedita exercitationem labore eum sed minus est, maxime cum inventore.
+                    </div>
+                    <div class="about__button">
+                        <a href="#" class="about__btn">Download My CV</a>
+                    </div>
+                </div>
+                <div class="about__item">
+                    <img src="/img/6.jpg" alt="" class="about__img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+    <div class="services" id="services">
+        <div class="container">
+            <div class="services__title">
+                Services
+            </div>
+            <div class="services__inner">
+                <div class="services__item appear">
+                    <div class="services__item_inner">
+                        <div class="services__photo">
+                            <img src="/img/services/research.png" alt="" class="services__img">
+                        </div>
+                        <div class="services__subtitle">
+                            User Research
+                        </div>
+                    </div>
+                    <div class="services__item_inner">
+                        <div class="services__photo">
+                            <img src="/img/services/browser.png" alt="" class="services__img">
+                        </div>
+                        <div class="services__subtitle">
+                            IA And Wireframes
+                        </div>
+                    </div>
+                    <div class="services__item_inner">
+                        <div class="services__photo">
+                            <img src="/img/services/driving-test.png" alt="" class="services__img">
+                        </div>
+                        <div class="services__subtitle">
+                            User Testing
+                        </div>
+                    </div>
+                </div>
+                <div class="services__item appear">
+                    <div class="services__item_inner">
+                        <div class="services__photo">
+                            <img src="/img/services/Asset 1xxxhdpi.png" alt="" class="services__img">
+                        </div>
+                        <div class="services__subtitle">
+                            Looks and Feel<br>
+                            Design (UI)
+                        </div>
+                    </div>
+                    <div class="services__item_inner">
+                        <div class="services__photo">
+                            <img src="/img/services/clipboard.png" alt="" class="services__img">
+                        </div>
+                        <div class="services__subtitle">
+                            Delivery
+                        </div>
+                    </div>
+                    <div class="services__item_inner">
+                        <div class="services__photo">
+                            <img src="/img/services/Asset 15.png" alt="" class="services__img">
+                        </div>
+                        <div class="services__subtitle">
+                            Integration Support
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="skill">
+        <div class="container">
+            <div class="skill__inner">
+                <div class="skill__title">
+                    My Skills
+                </div>
+                <div class="skill__photo appear">
+                    <img src="/img/skill/skill board.png" alt="" class="skill__img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="portfolio__title">
+                Portfolio
+            </div>
+            <div class="portfolio__inner appear">
+                <div class="portfolio__item">
+                    <div class="portfolio__photo">
+                        <img src="/img/portfolio/1.png" alt="" class="portfolio__img">
+                    </div>
+                    <div class="portfolio__photo">
+                        <img src="/img/portfolio/2.png" alt="" class="portfolio__img">
+                    </div>
+                    <div class="portfolio__photo">
+                        <img src="/img/portfolio/3.png" alt="" class="portfolio__img">
+                    </div>
+                </div>
+                <div class="portfolio__item">
+                    <div class="portfolio__photo">
+                        <img src="/img/portfolio/4.png" alt="" class="portfolio__img">
+                    </div>
+                    <div class="portfolio__photo">
+                        <img src="/img/portfolio/5.png" alt="" class="portfolio__img">
+                    </div>
+                    <div class="portfolio__photo">
+                        <img src="/img/portfolio/6.png" alt="" class="portfolio__img">
+                    </div>
+                </div>
+                <div class="portfolio__item hidden">
+                    <div class="portfolio__photo">
+                        <img src="/img/portfolio/1.png" alt="" class="portfolio__img">
+                    </div>
+                    <div class="portfolio__photo">
+                        <img src="/img/portfolio/2.png" alt="" class="portfolio__img">
+                    </div>
+                    <div class="portfolio__photo">
+                        <img src="/img/portfolio/3.png" alt="" class="portfolio__img">
+                    </div>
+                </div>
+                <div class="portfolio__button">
+                    <a href="#" class="portfolio__btn">Load More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="testimonials">
+        <div class="container">
+            <div class="testimonials__inner">
+                <div class="testimonials__title">
+                    Testimonials
+                </div>
+                <div class="testimonials__slider appear">
+                    <div class="testimonials__item" id="item_1">
+                        <div class="testimonials__item_photo">
+                            <img src="/img/testimonials/thinker2.jpg" alt="" class="testimonials__img">
+                        </div>
+                        <div class="testimonials__item_info">
+                            <div class="testimonials__item_title">
+                                Limara Tusi
+                            </div>
+                            <div class="testimonials__item_subtitle">
+                                Ceo, Random Company
+                            </div>
+                            <div class="testimonials__item_text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quasi similique unde aperiam vero aliquam, iure nobis quam temporibus necessitatibus rerum excepturi! Earum qui veniam, dicta id eius error dolorum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials__item" id="item_2">
+                        <div class="testimonials__item_photo">
+                            <img src="/img/testimonials/qwe.jpg" alt="" class="testimonials__img">
+                        </div>
+                        <div class="testimonials__item_info">
+                            <div class="testimonials__item_title">
+                                Limara Tusi
+                            </div>
+                            <div class="testimonials__item_subtitle">
+                                Ceo, Random Company
+                            </div>
+                            <div class="testimonials__item_text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quasi similique unde aperiam vero aliquam, iure nobis quam temporibus necessitatibus rerum excepturi! Earum qui veniam, dicta id eius error dolorum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials__item" id="item_3">
+                        <div class="testimonials__item_photo">
+                            <img src="/img/testimonials/office425-12-425x239.jpg" alt="" class="testimonials__img">
+                        </div>
+                        <div class="testimonials__item_info">
+                            <div class="testimonials__item_title">
+                                Limara Tusi
+                            </div>
+                            <div class="testimonials__item_subtitle">
+                                Ceo, Random Company
+                            </div>
+                            <div class="testimonials__item_text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quasi similique unde aperiam vero aliquam, iure nobis quam temporibus necessitatibus rerum excepturi! Earum qui veniam, dicta id eius error dolorum.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-dots">
+                        <span class="slider-dots_item" data-item="#item_1"></span> 
+                        <span class="slider-dots_item" data-item="#item_2"></span> 
+                        <span class="slider-dots_item" data-item="#item_3"></span> 
+                    </div>
+                </div>
+                <div class="funfact">
+                    <div class="funfact__inner appear">
+                        <div class="funfact__item">
+                            <div class="funfact__item_photo">
+                                <img class="funfact__img" src="/img/funfacts/study.png" alt="">
+                            </div>
+                            <div class="funfact__item_number">
+                                120
+                            </div>
+                            <div class="funfact__item_text">
+                                Hands to work
+                            </div>
+                        </div>
+                        <div class="funfact__item">
+                            <div class="funfact__item_photo">
+                                <img class="funfact__img" src="/img/funfacts/happiness.png" alt="">
+                            </div>
+                            <div class="funfact__item_number">
+                                310
+                            </div>
+                            <div class="funfact__item_text">
+                                Happy Client
+                            </div>
+                        </div>
+                        <div class="funfact__item">
+                            <div class="funfact__item_photo">
+                                <img class="funfact__img" src="/img/funfacts/delivery-complete.png" alt="">
+                            </div>
+                            <div class="funfact__item_number">
+                                510
+                            </div>
+                            <div class="funfact__item_text">
+                                Finished Projects
+                            </div>
+                        </div>
+                        <div class="funfact__item">
+                            <div class="funfact__item_photo">
+                                <img class="funfact__img" src="/img/funfacts/cup.png" alt="">
+                            </div>
+                            <div class="funfact__item_number">
+                                720
+                            </div>
+                            <div class="funfact__item_text">
+                                Cups of Coffee
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="contact" id="contact">
+        <div class="container">
+            <div class="contact__inner appear">
+                <div class="contact__title">
+                    Say Hello!
+                </div>
+                <div class="contact__form">
+                    <div class="contact__form_item">
+                        <input type="text" size="20px" placeholder="First Name">
+                        <input type="text" size="20px" placeholder="Email">
+                    </div>
+                    <div class="contact__form_item">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <div class="contact__button">
+                    <a href="#" class="contact__btn">Send</a>
+                    <img class="send__button" src="/img/contact/send-button.png" alt="">
+                </div>
+            </div>
+            
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__social">
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#facebook"></use>
+                        </svg>
+                    </a>
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#twitter"></use>
+                        </svg>
+                    </a>
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#linked_in"></use>
+                        </svg>
+                    </a>
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#google_plus"></use>
+                        </svg>
+                    </a>
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#behance"></use>
+                        </svg>
+                    </a>
+                    <a class="social__item" href="#" target="_blank">
+                        <svg class="social__icon">
+                            <use xlink:href="#dribble"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__info">
+                    2020. All Right Reserved
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+    
+    <!--Jacascript-->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="/script.js"></script>
+</body>
+</html>
